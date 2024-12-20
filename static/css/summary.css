@@ -25,6 +25,7 @@
 
 .counter {
     align-self: flex-start;
+    width: 100%;
 }
 
 .innerparent {
