@@ -1,0 +1,20 @@
+.golden {
+    color: #dbc078;
+}
+
+#myIframe{
+    display: none;
+    border: 1px solid #ccc;
+}
+
+#toggleNavbarItem {
+    cursor: pointer;
+}
+
+#myh3 {
+    text-align: justify;
+}
+
+.changetext {
+    font-size: medium;
+}

@@ -1,0 +1,39 @@
+.boxes {
+    background-color: white;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 40px;
+}
+
+.words {
+    border: 3px solid #dbc078;
+    border-radius: 10px;
+    background-color: #212529;
+    color: #dbc078;
+    margin: 0;
+}
+
+.golden {
+    color: #dbc078;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.counter {
+    align-self: flex-start;
+}
+
+.innerparent {
+    display: flex;
+    justify-content: space-between; 
+}
+
+#speakButton {
+    border: 3px solid #dbc078;
+    border-radius: 10px;
+    background-color: #212529;
+}
