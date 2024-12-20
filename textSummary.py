@@ -37,7 +37,7 @@ def summarizer(rawdocs):
                 else:
                     sentencescore[sent] += wordfreq[word.text]
 
-    selectlength = int(len(sentencetokens)*0.33)
+    selectlength = int(len(sentencetokens)*0.4)
     summary = nlargest(selectlength,sentencescore,key=sentencescore.get)
 
     finalsummary = [word.text for word in summary]
