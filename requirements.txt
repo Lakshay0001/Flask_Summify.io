@@ -28,9 +28,7 @@ preshed==3.0.9
 pydantic==2.10.3
 pydantic_core==2.27.1
 Pygments==2.18.0
-pypiwin32==223
 pyttsx3==2.98
-pywin32==308; platform_system == "Windows"
 gunicorn==20.1.0
 requests==2.32.3
 rich==13.9.4
