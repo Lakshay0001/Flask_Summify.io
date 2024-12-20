@@ -62,9 +62,13 @@
     .skipmargin {
         padding: 20px;
     }
+    .originaltextbox {
+        width: 100%;
+        align-self: center;
+    }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 350px) {
     #myIframe {
         width: 300px;
     }
@@ -115,61 +119,4 @@
         padding: 20px;
     }
 
-    .originaltextbox {
-        width: 90%;
-        align-self: center;
-    }
-}
-@media(max-width: 250px) {
-    .mediamobile {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .changejustification{
-        justify-content: space-between !important;
-    }
-
-    .changesize {
-        height: 50px;
-    }
-
-    .changeitemsize {
-        height: 20px;
-    }
-
-    .changeitempadding {
-        padding: 0;
-    }
-
-    .changeitemmargin {
-        margin: 0px !important;
-    }
-
-    .displayhide {
-        display: none;
-    }
-
-    .changeh1 {
-        font-size: larger;
-    }
-
-    .changeh3 {
-        font-size: medium;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .changetext {
-        columns: 36 !important;
-    }
-
-    .skipmargin {
-        padding: 20px;
-    }
-
-    .originaltextbox {
-        width: 90%;
-        align-self: center;
-    }
 }
