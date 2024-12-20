@@ -116,7 +116,7 @@
         width: 100%;
     }
 }
-@media(max-width: 320px) {
+@media(max-width: 300px) {
     .mediamobile {
         display: flex;
         flex-direction: column;
