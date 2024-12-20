@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,jsonify, send_from_directory
 from textSummary import summarizer
 # from pyttsx3 import *
-from gtts import *
+from gtts import gTTS
 from flask_cors import CORS
 
 
