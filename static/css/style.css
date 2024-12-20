@@ -5,6 +5,10 @@
 #myIframe{
     display: none;
     border: 1px solid #ccc;
+    width: 375px;
+    height: 225px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #toggleNavbarItem {
