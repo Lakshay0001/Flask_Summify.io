@@ -65,6 +65,9 @@
 }
 
 @media(max-width: 375px) {
+    #myIframe {
+        width: 300px;
+    }
     .mediamobile {
         display: flex;
         flex-direction: column;
@@ -113,10 +116,11 @@
     }
 
     .originaltextbox {
-        width: 100%;
+        width: 90%;
+        align-self: center;
     }
 }
-@media(max-width: 300px) {
+@media(max-width: 250px) {
     .mediamobile {
         display: flex;
         flex-direction: column;
@@ -165,6 +169,7 @@
     }
 
     .originaltextbox {
-        width: 100%;
+        width: 90%;
+        align-self: center;
     }
 }
