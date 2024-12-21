@@ -34,10 +34,17 @@
 }
 
 #speakButton {
-    border: 3px solid #dbc078;
+    border: 1px solid #dbc078;
+    border-radius: 10px;
+    background-color: #212529;
+    align-self: center;
+}
+#copyButton {
+    border: 1px solid #dbc078;
     border-radius: 10px;
     background-color: #212529;
 }
+
 
 
 @media(max-width: 992px) {
