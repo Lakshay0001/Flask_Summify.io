@@ -32,6 +32,19 @@ speakButton.addEventListener("click", async () => {
   }
 });
 
+const copyButton = document.getElementById("copyButton");
+
+copyButton.addEventListener("click", function () {
+  const textToCopy = document.getElementById("summaryText").innerText;
+  navigator.clipboard.writeText(textToCopy)
+  .then(() => {
+    alert("Text copied to clipboard!");
+  })
+  .catch(err => {
+    alert("Failed to copy the text: " + err);
+  });
+});
+
 
 
 
