@@ -9,6 +9,12 @@ speakButton.addEventListener("click", async () => {
     alert("No text!");
     return;
   }
+  const userConfirmation = confirm("Do you really wish to play the audio?");
+  
+  if (!userConfirmation) {
+    alert("Audio playback cancelled.");
+    return;
+  }
   try {
     const response = await fetch("/speak", {
       method: "POST",
