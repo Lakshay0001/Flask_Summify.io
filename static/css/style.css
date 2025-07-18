@@ -2,9 +2,26 @@
     color: #dbc078;
 }
 
+body {
+    background: radial-gradient(circle at center, #5C4100, #0D0D0D);
+    cursor: url('../images/cursor.svg'), auto;
+}
+
+.cursor-glow {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  background: radial-gradient(circle, #dbc07888 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  transition: top 0.05s linear, left 0.05s linear;
+}
+
+
 #myIframe{
     display: none;
-    border: 1px solid #ccc;
     width: 375px;
     height: 225px;
     margin-left: 20px;
@@ -22,6 +39,63 @@
 .changetext {
     font-size: medium;
 }
+
+.btn-golden {
+    background-color: #5C4100;
+    color: #dbc078;
+    cursor: url("../images/cursor.svg"), auto;
+}
+
+.btn-golden:hover {
+    color: #5C4100;
+    background-color: #dbc078;
+    cursor: url("../images/cursor-dark.svg"), auto;
+}
+
+.image-wrapper {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.main-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  filter: drop-shadow(0px 15px 25px rgba(0, 0, 0, 1));
+  z-index: 1;
+}
+
+/* 👇 Golden curve shape fill */
+.bottom-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #dbc078;
+  clip-path: ellipse(38% 300% at 55% 200%);
+  z-index: 0;
+}
+
+.floating-div {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 
 @media(max-width: 992px) {
     .mediamobile {
