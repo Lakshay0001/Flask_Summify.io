@@ -1,10 +1,10 @@
 .golden {
-    color: #dbc078;
+  color: #dbc078;
 }
 
 body {
-    background: radial-gradient(circle at center, #5C4100, #0D0D0D);
-    cursor: url('../images/cursor.svg'), auto;
+  background: radial-gradient(circle at center, #5c4100, #0d0d0d);
+  cursor: url("../images/cursor.svg"), auto;
 }
 
 .cursor-glow {
@@ -19,37 +19,36 @@ body {
   transition: top 0.05s linear, left 0.05s linear;
 }
 
-
-#myIframe{
-    display: none;
-    width: 375px;
-    height: 225px;
-    margin-left: 20px;
-    margin-right: 20px;
+#myIframe {
+  display: none;
+  width: 375px;
+  height: 225px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #toggleNavbarItem {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #myh3 {
-    text-align: justify;
+  text-align: justify;
 }
 
 .changetext {
-    font-size: medium;
+  font-size: medium;
 }
 
 .btn-golden {
-    background-color: #5C4100;
-    color: #dbc078;
-    cursor: url("../images/cursor.svg"), auto;
+  background-color: #5c4100;
+  color: #dbc078;
+  cursor: url("../images/cursor.svg"), auto;
 }
 
 .btn-golden:hover {
-    color: #5C4100;
-    background-color: #dbc078;
-    cursor: url("../images/cursor-dark.svg"), auto;
+  color: #5c4100;
+  background-color: #dbc078;
+  cursor: url("../images/cursor-dark.svg"), auto;
 }
 
 .image-wrapper {
@@ -74,13 +73,17 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px;
-  background: #dbc078;
-  clip-path: ellipse(38% 300% at 55% 200%);
+  height: 100%;
+  background: url("../images/shape.svg");
+  transform: translateY(50px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  /* clip-path: ellipse(38% 300% at 55% 200%); */
   z-index: 0;
 }
-
-.floating-div {
+s .floating-div {
   animation: floatUpDown 3s ease-in-out infinite;
 }
 
@@ -96,105 +99,103 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .mediamobile {
+    display: flex;
+    flex-direction: column;
+  }
 
-@media(max-width: 992px) {
-    .mediamobile {
-        display: flex;
-        flex-direction: column;
-    }
+  .changejustification {
+    justify-content: space-between !important;
+  }
 
-    .changejustification{
-        justify-content: space-between !important;
-    }
+  .changesize {
+    height: 50px;
+  }
 
-    .changesize {
-        height: 50px;
-    }
+  .changeitemsize {
+    height: 20px;
+  }
 
-    .changeitemsize {
-        height: 20px;
-    }
+  .changeitempadding {
+    padding: 0;
+  }
 
-    .changeitempadding {
-        padding: 0;
-    }
+  .changeitemmargin {
+    margin: 0px !important;
+  }
 
-    .changeitemmargin {
-        margin: 0px !important;
-    }
+  .displayhide {
+    display: none;
+  }
 
-    .displayhide {
-        display: none;
-    }
+  .changeh1 {
+    font-size: larger;
+  }
 
-    .changeh1 {
-        font-size: larger;
-    }
+  .changeh3 {
+    font-size: medium;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .changeh3 {
-        font-size: medium;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .skipmargin {
-        padding: 20px;
-    }
-    .originaltextbox {
-        width: 100%;
-        align-self: center;
-    }
+  .skipmargin {
+    padding: 20px;
+  }
+  .originaltextbox {
+    width: 100%;
+    align-self: center;
+  }
 }
 
-@media(max-width: 350px) {
-    #myIframe {
-        width: 300px;
-    }
-    .mediamobile {
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 350px) {
+  #myIframe {
+    width: 300px;
+  }
+  .mediamobile {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .changejustification{
-        justify-content: space-between !important;
-    }
+  .changejustification {
+    justify-content: space-between !important;
+  }
 
-    .changesize {
-        height: 50px;
-    }
+  .changesize {
+    height: 50px;
+  }
 
-    .changeitemsize {
-        height: 20px;
-    }
+  .changeitemsize {
+    height: 20px;
+  }
 
-    .changeitempadding {
-        padding: 0;
-    }
+  .changeitempadding {
+    padding: 0;
+  }
 
-    .changeitemmargin {
-        margin: 0px !important;
-    }
+  .changeitemmargin {
+    margin: 0px !important;
+  }
 
-    .displayhide {
-        display: none;
-    }
+  .displayhide {
+    display: none;
+  }
 
-    .changeh1 {
-        font-size: larger;
-    }
+  .changeh1 {
+    font-size: larger;
+  }
 
-    .changeh {
-        font-size: medium;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .changeh {
+    font-size: medium;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .changetext {
-        columns: 36 !important;
-    }
+  .changetext {
+    columns: 36 !important;
+  }
 
-    .skipmargin {
-        padding: 20px;
-    }
-
+  .skipmargin {
+    padding: 20px;
+  }
 }
