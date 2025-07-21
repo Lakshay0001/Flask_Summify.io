@@ -7,16 +7,8 @@ body {
   cursor: url("../images/cursor.svg"), auto;
 }
 
-.cursor-glow {
-  position: fixed;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  background: radial-gradient(circle, #dbc07888 0%, transparent 70%);
-  transform: translate(-50%, -50%);
-  transition: top 0.05s linear, left 0.05s linear;
+.changecursor {
+  cursor: url("../images/cursor.svg"), auto;
 }
 
 #myIframe {
@@ -37,6 +29,22 @@ body {
 
 .changetext {
   font-size: medium;
+}
+
+.originaltextbox {
+  background: #00000080; /* glass base */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* depth */
+  backdrop-filter: blur(12px); /* frosted blur */
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.originaltextbox:focus {
+    border: none;
+    outline: none;
 }
 
 .btn-golden {
@@ -104,31 +112,30 @@ s .floating-div {
   left: 3%;
   z-index: 1000;
   border: 2px dashed black;
+  cursor: url("../images/cursor-dark.svg"), auto;
+}
+.play-button:hover {
+  cursor: url("../images/cursor-dark.svg"), auto;
 }
 
 .rotate-infinite {
-    animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
+
+  100% {
+    transform: rotate(360deg);
   }
-  
+}
 
 @media (max-width: 992px) {
   .mediamobile {
     display: flex;
     flex-direction: column;
-  }
-
-  .changejustification {
-    justify-content: space-between !important;
   }
 
   .changesize {
@@ -161,9 +168,6 @@ s .floating-div {
     padding-right: 20px;
   }
 
-  .skipmargin {
-    padding: 20px;
-  }
   .originaltextbox {
     width: 100%;
     align-self: center;

@@ -15,7 +15,7 @@
 
   <body class="radgradient">
     <div class="px-3 py-2">
-      <div class="container">
+      <div class="container d-flex align-items-center justify-content-center">
         <!-- Video Modal -->
         <div
           class="modal fade"
@@ -47,22 +47,23 @@
           </div>
         </div>
 
+        <!-- Header -->
         <div
-          class="d-flex align-items-center justify-content-center justify-content-lg-start changejustification"
-        >
+          class=""
+        > 
           <a
             href="/"
-            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none changeitemmargin"
+            class="my-2 my-lg-0 me-lg-auto text-white text-decoration-none changecursor changeitemmargin"
           >
             <img
               src="../static/images/rec.png"
               alt="Brand Name"
-              class="bi me-2 changesize py-3"
+              class="bi changesize py-1 py-lg-3"
               height="75"
             />
           </a>
           <div>
-            <ul
+            <!-- <ul
               class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
             >
               <li>
@@ -85,7 +86,7 @@
                   <p class="d-inline-block golden">Home</p>
                 </a>
               </li>
-              <!-- <li>
+              <li>
                 <a
                   href="#"
                   class="nav-link text-white changeitempadding"
@@ -110,8 +111,8 @@
                     How to use
                   </p>
                 </a>
-              </li> -->
-            </ul>
+              </li>
+            </ul> -->
           </div>
         </div>
       </div>
@@ -120,7 +121,7 @@
     <div
       class="container d-flex position-relative overflow-hidden text-center landing-page align-items-end"
     >
-      <div class="col-md-12 d-flex mediamobile justify-content-between">
+      <div class="col-md-12 d-flex mediamobile justify-content-between align-items-center">
         <div
           class="d-flex flex-column justify-content-center lead fw-normal skipmargin col-lg-7"
         >
@@ -130,7 +131,7 @@
           <form
             action="/analyze"
             method="POST"
-            class="mediamobile d-flex flex-column"
+            class="mediamobile d-flex flex-column original-area"
           >
             <textarea
               name="rawtext"
@@ -175,9 +176,9 @@
         </div> -->
 
         <div
-          class="image-wrapper floating-div col-lg-4 d-flex justify-content-center"
+          class="image-wrapper floating-div col-12 col-lg-4 d-flex justify-content-center align-items-center"
         >
-          <div>
+          <div class="">
             <!-- Play Button Positioned near Robot's Finger -->
             <button
               type="button"
