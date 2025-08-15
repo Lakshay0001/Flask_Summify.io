@@ -1,129 +1,133 @@
-html{
-    cursor: url("../images/cursor-gradient.svg"), auto;
+html {
+  cursor: url("../images/cursor-gradient.svg"), auto;
 }
 
 body {
-    background: radial-gradient(circle at center, #5c4100, #0d0d0d);
+  background: radial-gradient(circle at center, #5c4100, #0d0d0d);
 }
 
 .originaltextbox {
-    background: #00000080; /* glass base */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* depth */
-    backdrop-filter: blur(12px); /* frosted blur */
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 10px;
-    color: white;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    text-align: justify;
-  }
-  
-  .originaltextbox:focus {
-      border: none;
-      outline: none;
-  }
+  background: #00000080; /* glass base */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* depth */
+  backdrop-filter: blur(12px); /* frosted blur */
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  text-align: justify;
+}
 
-  .changecursor {
-    cursor: url("../images/cursor-gradient.svg"), auto;
-  }
+.originaltextbox:focus {
+  border: none;
+  outline: none;
+}
+
+.changecursor {
+  cursor: url("../images/cursor-gradient.svg"), auto;
+}
 
 .words {
-    border-radius: 10px;
-    background-color: #5c4100;
-    color: #dbc078;
-    margin: 0;
+  border-radius: 10px;
+  background-color: #5c4100;
+  color: #dbc078;
+  margin: 0;
 }
 
 .golden {
-    color: #dbc078;
+  color: #dbc078;
 }
 
 .parent {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .counter {
-    align-self: flex-start;
-    width: 100%;
+  align-self: flex-start;
+  width: 100%;
 }
 
 .innerparent {
-    display: flex;
-    justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
 }
 
 #speakButton {
-    border: transparent;
-    background-color: transparent;
+  border: transparent;
+  background-color: transparent;
 }
 #copyButton {
-    border: transparent;
-    background-color: transparent;
+  border: transparent;
+  background-color: transparent;
+}
+#speakButton {
+  cursor: url("../images/cursor-gradient.svg"), auto;
+}
+#copyButton {
+  cursor: url("../images/cursor-gradient.svg"), auto;
 }
 
+@media (max-width: 992px) {
+  .mediamobile {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .changejustification {
+    justify-content: space-between !important;
+  }
 
-@media(max-width: 992px) {
-    .mediamobile {
-        display: flex;
-        flex-direction: column;
-    }
+  .changesize {
+    height: 50px;
+  }
 
-    .changejustification{
-        justify-content: space-between !important;
-    }
+  .changeitemsize {
+    height: 20px;
+  }
 
-    .changesize {
-        height: 50px;
-    }
+  .changeitempadding {
+    padding: 0;
+  }
 
-    .changeitemsize {
-        height: 20px;
-    }
+  .changeitemmargin {
+    margin: 0px !important;
+  }
 
-    .changeitempadding {
-        padding: 0;
-    }
-
-    .changeitemmargin {
-        margin: 0px !important;
-    }
-
-    .skipmargin {
-        padding: 20px;
-    }
+  .skipmargin {
+    padding: 20px;
+  }
 }
 
-@media(max-width: 375px) {
-    .mediamobile {
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 375px) {
+  .mediamobile {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .changejustification{
-        justify-content: space-between !important;
-    }
+  .changejustification {
+    justify-content: space-between !important;
+  }
 
-    .changesize {
-        height: 50px;
-    }
+  .changesize {
+    height: 50px;
+  }
 
-    .changeitemsize {
-        height: 20px;
-    }
+  .changeitemsize {
+    height: 20px;
+  }
 
-    .changeitempadding {
-        padding: 0;
-    }
+  .changeitempadding {
+    padding: 0;
+  }
 
-    .changeitemmargin {
-        margin: 0px !important;
-    }
+  .changeitemmargin {
+    margin: 0px !important;
+  }
 
-    .skipmargin {
-        padding: 20px;
-    }
+  .skipmargin {
+    padding: 20px;
+  }
 }
