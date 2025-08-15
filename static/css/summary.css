@@ -1,6 +1,9 @@
+html{
+    cursor: url("../images/cursor-gradient.svg"), auto;
+}
+
 body {
     background: radial-gradient(circle at center, #5c4100, #0d0d0d);
-    cursor: url("../images/cursor-gradient.svg"), auto;
 }
 
 .originaltextbox {

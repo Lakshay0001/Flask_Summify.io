@@ -47,9 +47,7 @@
         </div>
 
         <!-- Header -->
-        <div
-          class=""
-        > 
+        <div class="">
           <a
             href="/"
             class="my-2 my-lg-0 me-lg-auto text-white text-decoration-none changecursor changeitemmargin"
@@ -123,17 +121,6 @@
       >
         <div class="col-md-auto col-lg-5 mx-4 my-2 p-4 originaltextbox parent">
           <div>
-            <h1 class="my-4 golden">Input</h1>
-            <p>{{originalText}}</p>
-          </div>
-          <div class="d-inline counter">
-            <p class="words d-inline-block rounded-pill px-3 py-1">
-              Words: {{lenOriginalText}}
-            </p>
-          </div>
-        </div>
-        <div class="col-md-auto col-lg-5 mx-4 my-2 p-4 originaltextbox parent">
-          <div>
             <h1 class="my-4 golden">Output</h1>
             <p id="summaryText">{{summary}}</p>
           </div>
@@ -175,7 +162,18 @@
                 </button>
               </div>
             </div>
-          </div>  
+          </div>
+        </div>
+        <div class="col-md-auto col-lg-5 mx-4 my-2 p-4 originaltextbox parent">
+          <div>
+            <h1 class="my-4 golden">Input</h1>
+            <p>{{originalText}}</p>
+          </div>
+          <div class="d-inline counter">
+            <p class="words d-inline-block rounded-pill px-3 py-1">
+              Words: {{lenOriginalText}}
+            </p>
+          </div>
         </div>
       </div>
     </div>
