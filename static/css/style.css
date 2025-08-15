@@ -4,11 +4,11 @@
 
 body {
   background: radial-gradient(circle at center, #5c4100, #0d0d0d);
-  cursor: url("../images/cursor.svg"), auto;
+  cursor: url("../images/cursor-gradient.svg"), auto;
 }
 
 .changecursor {
-  cursor: url("../images/cursor.svg"), auto;
+  cursor: url("../images/cursor-gradient.svg"), auto;
 }
 
 #myIframe {
@@ -50,13 +50,13 @@ body {
 .btn-golden {
   background-color: #5c4100;
   color: #dbc078;
-  cursor: url("../images/cursor.svg"), auto;
+  cursor: url("../images/cursor-gradient.svg"), auto;
 }
 
 .btn-golden:hover {
   color: #5c4100;
   background-color: #dbc078;
-  cursor: url("../images/cursor-dark.svg"), auto;
+  cursor: url("../images/cursor-gradient.svg"), auto;
 }
 
 .image-wrapper {
@@ -112,10 +112,10 @@ s .floating-div {
   left: 3%;
   z-index: 1000;
   border: 2px dashed black;
-  cursor: url("../images/cursor-dark.svg"), auto;
+  cursor: url("../images/cursor-gradient.svg"), auto;
 }
 .play-button:hover {
-  cursor: url("../images/cursor-dark.svg"), auto;
+  cursor: url("../images/cursor-gradient.svg"), auto;
 }
 
 .rotate-infinite {

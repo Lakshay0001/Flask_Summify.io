@@ -13,34 +13,66 @@
     <link rel="stylesheet" href="../static/css/summary.css" />
   </head>
   <body>
-    <div class="px-3 py-2 text-bg-dark border-bottom">
-      <div class="container">
+    <div class="px-3 py-2">
+      <div class="container d-flex align-items-center justify-content-center">
+        <!-- Video Modal -->
         <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start changejustification"
+          class="modal fade"
+          id="videoModal"
+          tabindex="-1"
+          aria-labelledby="videoModalLabel"
+          aria-hidden="true"
         >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+              <div class="modal-body p-0 position-relative">
+                <button
+                  type="button"
+                  class="btn-close btn-close-white position-absolute end-0 m-2"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    id="videoFrame"
+                    src="https://www.youtube.com/embed/uWntQEiZBIE?autoplay=1"
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header -->
+        <div
+          class=""
+        > 
           <a
             href="/"
-            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none changeitemmargin"
+            class="my-2 my-lg-0 me-lg-auto text-white text-decoration-none changecursor changeitemmargin"
           >
             <img
-              src="../static/images/rec.jpg"
+              src="../static/images/rec.png"
               alt="Brand Name"
-              class="bi me-2 changesize"
+              class="bi changesize py-1 py-lg-3 changecursor"
               height="75"
             />
           </a>
           <div>
-            <ul
+            <!-- <ul
               class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
             >
               <li>
-                <a href="/" class="nav-link text-secondary changeitempadding">
+                <a href="/" class="nav-link text-secondary displayhide">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
                     height="32"
                     fill="currentColor"
-                    class="bi bi-house-fill golden changeitemsize"
+                    class="bi bi-house-fill golden"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -50,42 +82,64 @@
                       d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"
                     />
                   </svg>
+                  <p class="d-inline-block golden">Home</p>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link text-white changeitempadding"
+                  id="toggleNavbarItem"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                    class="bi bi-card-heading golden changeitemsize"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"
+                    />
+                    <path
+                      d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"
+                    />
+                  </svg>
                   <p class="d-inline-block golden changeitemmargin">
-                    Try again
+                    How to use
                   </p>
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </div>
     </div>
-    <hr style="margin: 0" />
 
-    <div class="position-relative overflow-hidden text-center bg-body-tertiary">
+    <div class="position-relative overflow-hidden text-center">
       <div
-        style="background-color: #212529"
         class="col-md-12 mx-auto d-flex py-5 justify-content-center mediamobile"
       >
-        <div class="col-md-auto col-lg-5 mx-4 my-2 boxes parent">
+        <div class="col-md-auto col-lg-5 mx-4 my-2 p-4 originaltextbox parent">
           <div>
-            <h1 class="my-4">Original Text</h1>
+            <h1 class="my-4 golden">Input</h1>
             <p>{{originalText}}</p>
           </div>
           <div class="d-inline counter">
-            <p class="words d-inline-block px-3 py-3">
+            <p class="words d-inline-block rounded-pill px-3 py-1">
               Words: {{lenOriginalText}}
             </p>
           </div>
         </div>
-        <div class="col-md-auto col-lg-5 mx-4 my-2 boxes parent">
+        <div class="col-md-auto col-lg-5 mx-4 my-2 p-4 originaltextbox parent">
           <div>
-            <h1 class="my-4">Summary</h1>
+            <h1 class="my-4 golden">Output</h1>
             <p id="summaryText">{{summary}}</p>
           </div>
           <div class="counter">
             <div class="innerparent align-items-center">
-              <p class="words d-inline-block px-3 py-3">
+              <p class="words d-inline-block rounded-pill px-3 py-1">
                 Words: {{lenSummary}}
               </p>
               <div>
@@ -110,7 +164,7 @@
                     width="28"
                     height="28"
                     fill="currentColor"
-                    class="bi bi-copy golden actionButton"
+                    class="bi bi-copy golden actionButton p-1"
                     viewBox="0 0 16 16"
                   >
                     <path

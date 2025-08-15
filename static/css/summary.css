@@ -1,14 +1,33 @@
-.boxes {
-    background-color: white;
-    border-radius: 10px;
-    text-align: justify;
-    padding: 40px;
+body {
+    background: radial-gradient(circle at center, #5c4100, #0d0d0d);
+    cursor: url("../images/cursor-gradient.svg"), auto;
 }
 
-.words {
-    border: 3px solid #dbc078;
+.originaltextbox {
+    background: #00000080; /* glass base */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* depth */
+    backdrop-filter: blur(12px); /* frosted blur */
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 10px;
-    background-color: #212529;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: justify;
+  }
+  
+  .originaltextbox:focus {
+      border: none;
+      outline: none;
+  }
+
+  .changecursor {
+    cursor: url("../images/cursor-gradient.svg"), auto;
+  }
+
+.words {
+    border-radius: 10px;
+    background-color: #5c4100;
     color: #dbc078;
     margin: 0;
 }
@@ -34,15 +53,12 @@
 }
 
 #speakButton {
-    border: 1px solid #dbc078;
-    border-radius: 10px;
-    background-color: #212529;
-    align-self: center;
+    border: transparent;
+    background-color: transparent;
 }
 #copyButton {
-    border: 1px solid #dbc078;
-    border-radius: 10px;
-    background-color: #212529;
+    border: transparent;
+    background-color: transparent;
 }
 
 
